@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: url('https://plus.unsplash.com/premium_photo-1678566111481-8e275550b700?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+    background-size: cover;
+    animation: backgroundMove 15s linear infinite;
+    height: 100vh; /* Ensures the body fills the screen */
+}
+
+@keyframes backgroundMove {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+header.hero {
+    text-align: center;
+    color: white;
+    padding: 4rem 2rem;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.3);
+}
+
+header p {
+    font-size: 1.5rem;
+    opacity: 0.9;
+}
+
+nav {
+    background: transparent;
+    padding: 0.8rem 1rem;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+.section {
+    padding: 3rem 1rem;
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: black;
+    border-bottom: 2px solid black;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+.skills-list {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.skills-list li {
+    background: black;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.experience {
+    margin-bottom: 2rem;
+}
+
+.experience h3 {
+    font-size: 1.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.experience p {
+    margin-bottom: 0.8rem;
+}
+
+.project {
+    background: #fafafa;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.project h3 {
+    margin-bottom: 0.8rem;
+    color: #333;
+}
+
+.project p {
+    margin-bottom: 1rem;
+    color: #555;
+}
+
+.project a {
+    color: gray;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.project a:hover {
+    color: gray;
+}
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background: #f4f4f4;
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: #555;
+    border-top: 2px solid #ddd;
+}
+
+footer p {
+    font-size: 0;
+}
