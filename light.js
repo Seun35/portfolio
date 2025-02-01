@@ -1,14 +1,19 @@
-const toggle = document.getElementById('toggle');
+const toggle = document.getElementById('toggle-btn');
 const body = document.body;
+const slider = document.querySelector('.toggle-slider');
 
 if (toggle) {
-  toggle.addEventListener('change', () => {
-    if (toggle.checked) {
+  toggle.addEventListener('click', () => {
+    if (body.classList.contains('dark-mode')) {
+      body.classList.remove('dark-mode');
+      slider.classList.remove('active');
+      body.style.backgroundColor = '';
+      body.style.color = 'black';
+    } else {
+      body.classList.add('dark-mode');
+      slider.classList.add('active');
       body.style.backgroundColor = 'black';
       body.style.color = 'white';
-    } else {
-      body.style.backgroundColor = ''; // Resets the background color to default
-      body.style.color = 'black';
     }
   });
 }
