@@ -31,8 +31,8 @@ p{
 
 /* Toggle slider (button inside switch) */
 .toggle-slider {
-  width: 20px;
-  height: 20px;
+  width: 10px;
+  height: 10px;
   background-color: white;
   border-radius: 50%;
   transition: transform 0.3s ease-in-out;
@@ -40,7 +40,7 @@ p{
 
 /* Moves the slider to the right when active */
 .toggle-slider.active {
-  transform: translateX(25px);
+  transform: translateX(15px);
 }
 
 /* Hover effect */
