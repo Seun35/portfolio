@@ -13,47 +13,39 @@ p{
     height: 100vh;
     flex-direction: column;
 }
+/* Position toggle at the top-right */
 .toggle-button {
-  display: inline-block;
+  width: 50px;
+  height: 25px;
   position: fixed;
-  top: 0%;
-  right: 0%;
-  width: 60px;
-  height: 34px;
-}
-
-.toggle-slider {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
+  top: 2px;
+  right: 20px;
+  display: flex;
+  align-items: center;
+  border-radius: 25px;
   background-color: #ccc;
-  border-radius: 34px;
-  transition:  0.4s;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  padding: 1px;
 }
 
-.toggle-slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    border-radius: 50%;
-    transition: transform 0.4s;
-  }
-  
-  input:checked + .toggle-slider {
-    background-color:white;
-  }
-  
-  input:checked + .toggle-slider:before {
-    background-color: black;
-    transform: translateX(26px);
-  }
+/* Toggle slider (button inside switch) */
+.toggle-slider {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  transition: transform 0.3s ease-in-out;
+}
 
+/* Moves the slider to the right when active */
+.toggle-slider.active {
+  transform: translateX(25px);
+}
+
+/* Hover effect */
+.toggle-button:hover {
+  background-color: #888;
   .p2{
         position: fixed;
         top: 0;
